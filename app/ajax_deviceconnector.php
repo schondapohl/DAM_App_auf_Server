@@ -3,18 +3,16 @@
 include('dbconnection.php');
 
 if (mysqli_connect_errno() == 0) {
-    if ($_GET['mode'] == "erstellen") {
+    if ($_GET['mode'] == "log") {
         $response = array(
             'erstellt' => false
         );
-        $sql = "INSERT INTO `app_fragen`(`frageid`, `frage`, `antworta`, `antwortb`, `antwortc`, `antwortd`, `fautor`) VALUES (?,?,?,?,?,?,?)";
+        $sql = "INSERT INTO `app_log`(`name`, `os`, `geraeteid`, `modell`, `version`, `aktion`, `zeitpunkt`) VALUES (?,?,?,?,?,?,?)";
         $eintrag = $db->prepare($sql);
         $time = time();
         $status = 0;
         $fid = md5($time);
-        #$date_time = strtotime($_GET['vstart'] . ":00 GMT"); // works great!
-        #$date_time2 = strtotime($_GET['vend'] . ":00 GMT"); // works great!
-        $eintrag->bind_param('sssssss', $fid, $_GET['pfrage'], $_GET['pa'], $_GET['pb'], $_GET['pc'], $_GET['pd'], $_GET['pautor']);
+        $eintrag->bind_param('ssssssi', $fid, $_GET['dname'], $_GET['dos'], $_GET['did'], $_GET['dmodell'], $_GET['daktion'], $time());
         $eintrag->execute();
 
         // Pruefen ob der Eintrag efolgreich war
