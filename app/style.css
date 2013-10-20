@@ -1,0 +1,331 @@
+body {
+    padding: 0;
+    font-family: Times;
+    margin: 50px;
+    letter-spacing: 2;
+}
+
+@media all and (min-width:1024px) and (min-height:600px) {
+    /* Media query, which only allows desktops, laptops, and landscape iPads to see the gradient */
+
+    body:before {
+        content: " ";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.4) 100%);
+    }
+
+    a:hover {
+        color: #09F;
+    }
+
+}
+
+#buttonReset {
+    padding: 5px 10px;
+}
+
+/* End of the media query */
+
+#countdown {
+    position: relative;
+    top: 130px;
+    padding-left: 60px;
+    color: #FFF;
+    /*   border:1px solid #009; */
+}
+
+#secs {
+    position: relative;
+}
+
+#descrip {
+    text-align: left;
+    position: relative;
+    top: 150px;
+}
+
+#d-title {
+    text-align: center;
+
+}
+
+#d-subtitle {
+    text-align: center;
+
+    position: relative;
+    top: -15px;
+}
+
+#main-title {
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    text-align: center;
+    /*   border:1px solid #090; */
+}
+
+#main-title-t {
+
+    color: #FFF;
+}
+
+#main-title-s {
+    position: relative;
+    top: -50px;
+
+}
+
+#subtitles {
+
+}
+
+#days-sub {
+    position: relative;
+    left: 80px;
+}
+
+#hours-sub {
+    position: relative;
+    left: 250px;
+
+}
+
+#mins-sub {
+    position: relative;
+    left: 405px;
+}
+
+#secs-sub {
+    color: black;
+}
+
+.startAction {
+    margin-top: 10px;
+    float: left;
+    padding: 10px;
+    background-color: white;
+    border: solid 1px gray;
+}
+
+.hidden {
+    display: none;
+}
+
+.antwortenTabelle {
+    width: 100%;
+}
+
+.antwortenTabelle td {
+    width: 50%;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    padding: 40px 0 40px 0;
+    border: solid 1px gray;
+}
+
+.antwortenTabelle td:hover {
+    background-color: #89c6e3;
+}
+
+.rWrapper
+{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    background-color: white;
+    border: solid 1px gray;
+}
+
+.frage {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    clear: both;
+}
+
+.buttonContainer {
+    float: right;
+}
+
+#wrapper {
+    margin-top: 10px;
+}
+
+.fragenWrapper {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #ffbb5a;
+    padding-bottom: 10px;
+}
+
+.ullist {
+    float: right;
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 10px;
+
+}
+
+.ullist li {
+    float: right;
+    list-style-type: none;
+    margin-left: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#icons li {
+    font-size: 14px;
+}
+
+#damlogo {
+    float: left;
+    width: 100px;
+    cursor: pointer;
+}
+
+.clearer {
+    clear: both;
+}
+
+.right {
+    float: right;
+}
+
+.loading {
+
+}
+
+.clientCount {
+    display: none;
+}
+
+.resultatdiv {
+    width: 50%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.resultatH {
+    margin-top: 20px;
+}
+
+#r_wrapper {
+    height: 250px;
+}
+
+/* INDEX.HTML */
+
+#indexDivWrapper {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.indexButton {
+    cursor: pointer;
+    width: 100%;
+    padding: 30px 0px;
+    font-size: 26px;
+}
+
+.greenBg {
+    background-color: #66cdaa;
+    border: #228b22 solid 1px;
+}
+
+.greenBg2 {
+    background-color: #afe5d3;
+    border: #228b22 solid 1px;
+}
+
+.redBg {
+    background-color: #e9967a;
+    border: #db7093 1px solid;
+}
+
+.redBg2 {
+    background-color: #efc9bb;
+    border: #db7093 1px solid;
+}
+
+.blueBg {
+    background-color: #6facd5;
+    border: #194b7e solid 1px;
+    color: white;
+}
+
+.lilaBg
+{
+    background-color: rgba(187, 95, 98, 0.74);
+    border: #194b7e solid 1px;
+    color: black;
+}
+
+.dbBg
+{
+    background-color: rgba(154, 166, 42, 0.46);
+    border: #194b7e solid 1px;
+    color: white;
+}
+
+.lilaBg a, .dbBg a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.round {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+
+
+/* Vortrag eingeben */
+.einput {
+    width: 99%;
+}
+
+.ewrapper {
+    padding: 20px;
+}
+
+.ewrapper input, #aidselection, #tag, textarea {
+    padding: 5px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: solid 1px #194b7e;
+    margin-top: 3px;
+    color: #000000;
+}
+
+.ewrapper div {
+
+}
+
+#vbtn {
+    padding: 10px 30px;
+    background-color: white;
+    border: solid 1px #194b7e;
+    cursor: pointer;
+}
+
+#vbtn:hover {
+    padding: 10px 30px;
+    border: solid 1px #194b7e;
+    cursor: pointer;
+    background-color: #5f9cc5;
+    color: white;
+}
+
+
+

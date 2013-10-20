@@ -1,0 +1,7 @@
+<!DOCTYPE HTML>
+<html>
+<head><title>PhoneGap</title>
+    <script type="text/javascript" charset="utf-8" src="cordova-2.5.0.js"></script>
+</head>
+<body><h1>Hello PhoneGap</h1></body>
+</html>
